@@ -50,8 +50,8 @@
 				</div>
 			</div>
 			{{ end }}
-			{{/* navbarItem .Path (.T "Donate" | printf "<i class=\"red heart icon\"></i>%s") "/donate" */}}
 			{{ navbarItem .Path (.T "Discord" | printf "<i class=\"discord icon\" style=\"margin-right: 10px; color: #7289da;\"></i>%s") "https://discord.gg/87E2K46" }}
+			{{/* navbarItem .Path (.T "Donate" | printf "<i class=\"red heart icon\"></i>%s") "/donate" */}}
 			{{ if $isAdmin }}{{ navbarItem .Path (.T "Admin Panel" | printf "<b>%s</b>") "https://old.ussr.pl/index.php?p=100" }}{{ end }}
 		{{ end }}
 		<div class="firetrucking-right-menu">
