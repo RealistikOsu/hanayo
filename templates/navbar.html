@@ -4,7 +4,10 @@
 {{ $isClanO := qb "SELECT user, clan FROM user_clans WHERE user = ? AND perms = 8" .Context.User.ID }}
 {{ $isClan := qb "SELECT user, clan FROM user_clans WHERE user = ?" .Context.User.ID }}
 {{ $ds      := band .ClientFlags 1 }}
-<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<head>
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+</head>
 <div class="ui secondary fixed-height stackable white background main menu no margin bottom{{ if .DisableHH }} dropped{{ end }}" id="navbar">
 	<div class="ui container">
 		<div class="item">
